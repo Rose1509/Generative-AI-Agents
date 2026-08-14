@@ -47,6 +47,8 @@ A token can be:
 - Punctuation
 - A commonly used sequence of characters
 
+![Tokenization](../Images/Tokenization.png)
+
 Example:
 
 unbelievable → un + believable
@@ -77,7 +79,7 @@ We use a transformer model. This kind of model consist of two "block".
 2. Decoder:
 - It uses embeddings, attention and a neural network to predict the next token in a sequence.
 
-c:\Users\bhagi\OneDrive\Documents\Pictures\Screenshots\Screenshot 2026-08-14 195219.png
+![Transformation](../Images/Transformation.png)
 
 ## 3. Initial vectors and positional encoding
 -   **Initial vectors:** Token vectors start with **randomly assigned values** before being processed by the Transformer.
@@ -87,7 +89,8 @@ c:\Users\bhagi\OneDrive\Documents\Pictures\Screenshots\Screenshot 2026-08-14 195
 For eg:  `Dog bites man` ≠ `Man bites dog`
 (**Positions are different which matters a lot.**)
 The same words have different meanings because their **positions are different**.
-"C:\Users\bhagi\OneDrive\Documents\Pictures\Screenshots\Screenshot 2026-08-14 200203.png"
+
+![Tokensposition](../Images/Tokensposition.png)
 
 > **In short:** Initial vectors represent tokens, while positional encoding tells the Transformer **where each token appears in the sequence**.
 
@@ -117,6 +120,13 @@ Example:
 | dog | `[10, 3, 2]` |
 | puppy | `[5, 3, 2]` |
 | car | `[-2, -2, 1]` |
+
+We can think of the elements of the embeddings as dimensions in a multi-dimensional vector-space. In our simple example, our embeddings only have three elements, so we can visualize them as vectors in three-dimensional space, like this:
+
+![graph](../Images/graph.png)
+
+Tokens with similar meanings have similar **embedding vectors**. For example, **“dog”** and **“puppy”** have similar vector directions, while **“car”** or **“skateboard”** are more different. **Cosine similarity** measures how semantically similar two token vectors are.
+
 
 ### Multi-Head Attention
 
