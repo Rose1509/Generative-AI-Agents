@@ -47,7 +47,7 @@ A token can be:
 - Punctuation
 - A commonly used sequence of characters
 
-![Tokenization](../Images/Tokenization.png)
+![Tokanization](../Images/Tokanization.png)
 
 Example:
 
