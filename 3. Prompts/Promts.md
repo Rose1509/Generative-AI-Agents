@@ -1,12 +1,12 @@
 # Prompts in Generative AI
 
-> A **prompt** is the input provided to a Large Language Model (LLM) to generate a response, called a **completion**. A prompt can be a question, command, instruction, or conversational message.
+A **prompt** is the input provided to a Large Language Model (LLM) to generate a response, called a **completion**. A prompt can be a question, command, instruction, or conversational message.
 
 ## 1\. Types of Prompts
 
 There are generally two types of prompts:
 
-### System Prompt
+### 1. System Prompt
 
 A **system prompt** defines the model's overall:
 
@@ -17,24 +17,24 @@ A **system prompt** defines the model's overall:
 
 **Example:**
 
-You are a helpful assistant that responds in a cheerful and friendly manner.
+> You are a helpful assistant that responds in a cheerful and friendly manner.
 
 **Key idea:**  
 **System prompt = How the model should behave**
 
 Usually, the **application** defines the system prompt.
 
-### User Prompt
+### 2. User Prompt
 
 A **user prompt** contains the specific question, command, or instruction that the user wants the model to respond to.
 
-**Example:**
+- **Example:**
 
-Summarize the key considerations for adopting generative AI
+> Summarize the key considerations for adopting generative AI
 
-for a corporate executive. Use no more than six bullet points.
+> for a corporate executive. Use no more than six bullet points.
 
-**Key idea:**  
+- **Key idea:**  
 **User prompt = What the user wants the model to do**
 
 ---
@@ -58,30 +58,15 @@ for a corporate executive. Use no more than six bullet points.
 Generative AI applications often maintain conversation history to keep responses consistent and relevant.
 
 The model can receive:
-
-System Prompt
-      +
-Previous User Messages
-      +
-Previous AI Responses
-      +
-New User Prompt
-      ↓
-   New Response
+![conversation](../Images/conversation.png)
 
 **Example**
 
-**User:**
+**User:** What are the key considerations for adopting Generative AI?
 
-What are the key considerations for adopting Generative AI?
+**AI**: Governance, privacy, security, organizational readiness...
 
-**AI**:
-
-Governance, privacy, security, organizational readiness...
-
-**User**:
-
-What are common privacy-related risks?
+**User**: What are common privacy-related risks?
 
 > The second question makes more sense when the model receives the previous conversation as context.
 
@@ -98,21 +83,13 @@ RAG provides the model with **relevant external information** before generating 
 
 ### Basic Process
 
-User Question
-      ↓
-Retrieve Relevant Information
-      ↓
-Add Information to Prompt
-      ↓
-Send to LLM
-      ↓
-Grounded Response
+![rag](../Images/rag.png)
 
 ### Example
 
 Suppose an employee asks:
 
-> **"Is ir holiday tomorrow?"**
+> **"Is it holiday tomorrow?"**
 
 Without additional information, the model can only give a **generic answer**.
 
@@ -141,11 +118,11 @@ Good prompts generally produce better and more useful responses.
 
 So what's the type of bad and better promptingggg???
 
-**Bad**:
+- **Bad**:
 
 Tell me about AI.
 
-**Better**:
+- **Better**:
 
 Explain generative AI to a beginner in 5 bullet points.
 
@@ -193,29 +170,9 @@ Tell the model how you want the answer organized:
 
 ## 🧠 One-Minute Memory
 
-PROMPT
 
-  │
+![memory](../Images/memory.png)
 
-  ├── System → Behavior
-
-  ├── User   → Task
-
-  │
-
-  ├── History → Context
-
-  │
-
-  └── RAG → External Information
-
-              ↓
-
-             LLM
-
-              ↓
-
-          Completion
           
 ### ⭐ Besttt Rule for Prompting
 
