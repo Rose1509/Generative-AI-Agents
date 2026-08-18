@@ -47,7 +47,7 @@ A token can be:
 - Punctuation
 - A commonly used sequence of characters
 
-![Tokanization](../Images/Tokanization.png)
+![Tokanization](../../Images/Tokanization.png)
 
 Example:
 
@@ -79,7 +79,7 @@ We use a transformer model. This kind of model consist of two "block".
 2. Decoder:
 - It uses embeddings, attention and a neural network to predict the next token in a sequence.
 
-![Transformation](../Images/Transformation.png)
+![Transformation](../../Images/Transformation.png)
 
 ## 3. Initial vectors and positional encoding
 -   **Initial vectors:** Token vectors start with **randomly assigned values** before being processed by the Transformer.
@@ -90,7 +90,7 @@ For eg:  `Dog bites man` ≠ `Man bites dog`
 (**Positions are different which matters a lot.**)
 The same words have different meanings because their **positions are different**.
 
-![Tokensposition](../Images/Tokensposition.png)
+![Tokensposition](../../Images/Tokensposition.png)
 
 > **In short:** Initial vectors represent tokens, while positional encoding tells the Transformer **where each token appears in the sequence**.
 
@@ -123,7 +123,7 @@ Example:
 
 We can think of the elements of the embeddings as dimensions in a multi-dimensional vector-space. In our simple example, our embeddings only have three elements, so we can visualize them as vectors in three-dimensional space, like this:
 
-![graph](../Images/graph.png)
+![graph](../../Images/graph.png)
 
 Tokens with similar meanings have similar **embedding vectors**. For example, **“dog”** and **“puppy”** have similar vector directions, while **“car”** or **“skateboard”** are more different. **Cosine similarity** measures how semantically similar two token vectors are.
 

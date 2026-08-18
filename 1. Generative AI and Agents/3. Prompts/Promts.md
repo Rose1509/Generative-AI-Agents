@@ -58,7 +58,7 @@ A **user prompt** contains the specific question, command, or instruction that t
 Generative AI applications often maintain conversation history to keep responses consistent and relevant.
 
 The model can receive:
-![conversation](../Images/conversation.png)
+![conversation](../../Images/conversation.png)
 
 **Example**
 
@@ -83,7 +83,7 @@ RAG provides the model with **relevant external information** before generating 
 
 ### Basic Process
 
-![rag](../Images/rag.png)
+![rag](../../Images/rag.png)
 
 ### Example
 
@@ -171,7 +171,7 @@ Tell the model how you want the answer organized:
 ## 🧠 One-Minute Memory
 
 
-![memory](../Images/memory.png)
+![memory](../../Images/memory.png)
 
           
 ### ⭐ Besttt Rule for Prompting
