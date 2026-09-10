@@ -64,6 +64,7 @@ The model receives your actual hotel catalog data as context and responds with r
 
 ![Grounded](../../Images/grounded.png)
 
+```
 User Question
      +
 Actual Hotel Catalog
@@ -71,6 +72,7 @@ Actual Hotel Catalog
 LLM
      ↓
 Data-backed Response
+```
 
 Now the model can answer using real hotel names, prices, and availability from the provided data.
 
