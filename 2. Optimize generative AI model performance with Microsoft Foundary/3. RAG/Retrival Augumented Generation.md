@@ -42,7 +42,9 @@ GENERATE → LLM generates grounded response
 
 ### ❌ Ungrounded
 The model relies only on its training data and might invent hotel names or details.
+
 ![Ungrounded](../../Images/ungrounded.png)
+
 ```
 User Question
      ↓
@@ -59,7 +61,9 @@ Without your hotel data, the model might **invent hotel names or details**.
 
 ### ✅ Grounded
 The model receives your actual hotel catalog data as context and responds with real hotel names, prices, and availability.
+
 ![Grounded](../../Images/grounded.png)
+
 User Question
      +
 Actual Hotel Catalog
